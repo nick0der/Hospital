@@ -1,4 +1,4 @@
-package com.company;
+package com.company.model;
 
 public class Hospital {
 
@@ -14,9 +14,6 @@ public class Hospital {
         this.address = address;
         this.phoneNumber = phoneNumber;
     }
-
-
-    //Getters and setters:
 
     public String getName() {
         return name;
@@ -40,5 +37,14 @@ public class Hospital {
 
     public void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
+    }
+
+    @Override
+    public String toString() {
+        return "Hospital{" +
+                "name='" + name + '\'' +
+                ", address='" + address + '\'' +
+                ", phoneNumber='" + phoneNumber + '\'' +
+                '}';
     }
 }

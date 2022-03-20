@@ -1,8 +1,8 @@
-package com.company;
+package com.company.model;
 
 import java.time.LocalDate;
 
-public class Employee extends Person {
+public abstract class Employee extends Person {
 
     private int salary;
     private int experienceYears;
@@ -58,5 +58,15 @@ public class Employee extends Person {
 
     public void setHospital(Department department) {
         this.department = department;
+    }
+
+    @Override
+    public String toString() {
+        return "Employee{" +
+                "salary=" + salary +
+                ", experienceYears=" + experienceYears +
+                ", education='" + education + '\'' +
+                ", department=" + department +
+                '}';
     }
 }

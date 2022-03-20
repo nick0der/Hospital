@@ -1,6 +1,6 @@
-package com.company;
+package com.company.model;
 
-abstract public class Transport {
+public abstract class Transport {
 
     private String model;
     private int year;
@@ -16,8 +16,6 @@ abstract public class Transport {
         this.price = price;
         this.licensePlate = licensePlate;
     }
-
-    //Getters and setters
 
     public String getModel() {
         return model;

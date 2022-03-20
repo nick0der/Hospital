@@ -1,8 +1,7 @@
-package com.company;
+package com.company.model;
 
-public class Room {
+public abstract class Room {
 
-    private Department department;
     private int number;
     private int width;
     private int height;
@@ -10,8 +9,7 @@ public class Room {
     public Room() {
     }
 
-    public Room(Department department, int number, int width, int height) {
-        this.department = department;
+    public Room(int number, int width, int height) {
         this.number = number;
         this.width = width;
         this.height = height;
@@ -20,17 +18,6 @@ public class Room {
     //Auto-calculated variable
     public int getArea(){
         return width * height;
-    }
-
-
-    //Getters and setters:
-
-    public Department getDepartment() {
-        return department;
-    }
-
-    public void setDepartment(Department department) {
-        this.department = department;
     }
 
     public int getNumber() {
@@ -55,5 +42,14 @@ public class Room {
 
     public void setHeight(int height) {
         this.height = height;
+    }
+
+    @Override
+    public String toString() {
+        return "Room{" +
+                "number=" + number +
+                ", width=" + width +
+                ", height=" + height +
+                '}';
     }
 }

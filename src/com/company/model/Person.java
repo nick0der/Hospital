@@ -1,4 +1,4 @@
-package com.company;
+package com.company.model;
 
 import java.time.LocalDate;
 
@@ -16,9 +16,6 @@ public abstract class Person {
         this.gender = gender;
         this.birthday = birthday;
     }
-
-
-    //Getters and setters:
 
     public String getFullName() {
         return fullName;
