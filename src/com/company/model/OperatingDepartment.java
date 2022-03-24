@@ -1,13 +1,22 @@
 package com.company.model;
 
-public class OperatingDepartment {
+public class OperatingDepartment extends Department {
 
     private int freeOperatingRooms;
 
     public OperatingDepartment() {
     }
 
-    public OperatingDepartment(int freeOperatingRooms) {
+    public OperatingDepartment(Hospital hospital, int amountOfRooms, int floor, int freeOperatingRooms) {
+        super(hospital, amountOfRooms, floor);
+        this.freeOperatingRooms = freeOperatingRooms;
+    }
+
+    public int getFreeOperatingRooms() {
+        return freeOperatingRooms;
+    }
+
+    public void setFreeOperatingRooms(int freeOperatingRooms) {
         this.freeOperatingRooms = freeOperatingRooms;
     }
 

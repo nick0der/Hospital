@@ -2,6 +2,8 @@ package com.company.model;
 
 import com.company.enums.HealthStatus;
 
+import java.time.LocalDate;
+
 public class Therapist extends Employee {
 
     private TherapyRoom therapyRoom;
@@ -9,7 +11,8 @@ public class Therapist extends Employee {
     public Therapist() {
     }
 
-    public Therapist(TherapyRoom therapyRoom) {
+    public Therapist(String fullName, String gender, LocalDate birthday, int salary, int experienceYears, String education, Department department, TherapyRoom therapyRoom) {
+        super(fullName, gender, birthday, salary, experienceYears, education, department);
         this.therapyRoom = therapyRoom;
     }
 
