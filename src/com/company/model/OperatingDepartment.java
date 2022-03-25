@@ -1,6 +1,6 @@
 package com.company.model;
 
-public class OperatingDepartment extends Department {
+public final class OperatingDepartment extends Department {
 
     private int freeOperatingRooms;
 

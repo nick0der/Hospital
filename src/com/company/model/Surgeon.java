@@ -1,14 +1,11 @@
 package com.company.model;
 
 import com.company.enums.HealthStatus;
-import com.company.model.Department;
-import com.company.model.Employee;
-import com.company.model.OperatingRoom;
-import com.company.model.Patient;
+import com.company.interfaces.IOperate;
 
 import java.time.LocalDate;
 
-public class Surgeon extends Employee {
+public final class Surgeon extends Employee implements IOperate {
 
     private boolean operating;
     private OperatingRoom operatingRoom;
@@ -17,8 +14,9 @@ public class Surgeon extends Employee {
         this.operating = operating;
     }
 
-    public Surgeon(String fullName, String gender, LocalDate birthday, int salary, int experienceYears, String education, Department department, boolean operating, OperatingRoom operatingRoom) {
-        super(fullName, gender, birthday, salary, experienceYears, education, department);
+    public Surgeon(String fullName, String gender, LocalDate birthday, int salary, int experienceYears,
+                   String education, boolean operating, OperatingRoom operatingRoom) {
+        super(fullName, gender, birthday, salary, experienceYears, education);
         this.operating = operating;
         this.operatingRoom = operatingRoom;
     }

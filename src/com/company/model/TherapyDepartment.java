@@ -1,9 +1,6 @@
 package com.company.model;
 
-import com.company.model.Department;
-import com.company.model.Hospital;
-
-public class TherapyDepartment extends Department {
+public final class TherapyDepartment extends Department {
 
     private String therapyName;
     private int numberOfTherapists;

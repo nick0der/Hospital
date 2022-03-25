@@ -1,9 +1,6 @@
 package com.company.model;
 
-import com.company.model.Room;
-import com.company.model.StationaryDepartment;
-
-public class StationaryRoom extends Room {
+public final class StationaryRoom extends Room {
 
     private StationaryDepartment stationaryDepartment;
     private int totalBeds;

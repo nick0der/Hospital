@@ -1,6 +1,6 @@
 package com.company.model;
 
-public class Hospital {
+public final class Hospital {
 
     private String name;
     private String address;

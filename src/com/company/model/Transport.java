@@ -48,4 +48,14 @@ public abstract class Transport {
     public void setLicensePlate(String licensePlate) {
         this.licensePlate = licensePlate;
     }
+
+    @Override
+    public String toString() {
+        return "Transport{" +
+                "model='" + model + '\'' +
+                ", year=" + year +
+                ", price=" + price +
+                ", licensePlate='" + licensePlate + '\'' +
+                '}';
+    }
 }

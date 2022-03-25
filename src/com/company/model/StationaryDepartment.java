@@ -1,9 +1,6 @@
 package com.company.model;
 
-import com.company.model.Department;
-import com.company.model.Hospital;
-
-public class StationaryDepartment extends Department {
+public final class StationaryDepartment extends Department {
 
     private int dropCounters;
 

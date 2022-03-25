@@ -4,7 +4,7 @@ import com.company.enums.HealthStatus;
 
 import java.time.LocalDate;
 
-public class Patient extends Person {
+public final class Patient extends Person {
 
     private HealthStatus healthStatus;
     private StationaryRoom hospitalRoom;

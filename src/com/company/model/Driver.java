@@ -5,7 +5,7 @@ import com.company.enums.DrivingCategory;
 import java.time.LocalDate;
 import java.util.List;
 
-public class Driver extends Employee {
+public final class Driver extends Employee {
 
     private Ambulance ambulance;
     List<DrivingCategory> categories;
@@ -13,8 +13,8 @@ public class Driver extends Employee {
     public Driver() {
     }
 
-    public Driver(String fullName, String gender, LocalDate birthday, int salary, int experienceYears, String education, Department department, Ambulance ambulance, List<DrivingCategory> categories) {
-        super(fullName, gender, birthday, salary, experienceYears, education, department);
+    public Driver(String fullName, String gender, LocalDate birthday, int salary, int experienceYears, String education, Ambulance ambulance, List<DrivingCategory> categories) {
+        super(fullName, gender, birthday, salary, experienceYears, education);
         this.ambulance = ambulance;
         this.categories = categories;
     }

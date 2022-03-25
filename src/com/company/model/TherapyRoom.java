@@ -1,9 +1,7 @@
 package com.company.model;
 
-import com.company.model.Room;
-import com.company.model.TherapyDepartment;
+public final class TherapyRoom extends Room {
 
-public class TherapyRoom extends Room {
     TherapyDepartment therapyDepartment;
 
     public TherapyRoom() {

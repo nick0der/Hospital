@@ -1,6 +1,7 @@
 package com.company.model;
 
-public class OperatingRoom extends Room {
+public final class OperatingRoom extends Room {
+
     private int beds;
     private int scalpels;
     private int scissors;

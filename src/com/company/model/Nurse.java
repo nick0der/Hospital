@@ -1,8 +1,10 @@
 package com.company.model;
 
+import com.company.interfaces.INurse;
+
 import java.time.LocalDate;
 
-public class Nurse extends Employee {
+public final class Nurse extends Employee implements INurse {
 
     private StationaryRoom hospitalRoom;
 
@@ -10,13 +12,13 @@ public class Nurse extends Employee {
     }
 
     public Nurse(String fullName, String gender, LocalDate birthday, int salary,
-                 int experienceYears, String education, Department department, StationaryRoom hospitalRoom) {
-        super(fullName, gender, birthday, salary, experienceYears, education, department);
+                 int experienceYears, String education, StationaryRoom hospitalRoom) {
+        super(fullName, gender, birthday, salary, experienceYears, education);
         this.hospitalRoom = hospitalRoom;
     }
 
-    public void work() {
-        System.out.println("Nurse is working");
+    public void attendRoom(StationaryRoom stationaryRoom) {
+        System.out.println("Nurse " + this.getFullName() + " attended room №" + stationaryRoom.getNumber());
     }
 
     public StationaryRoom getHospitalRoom() {

@@ -2,31 +2,29 @@ package com.company.model;
 
 import java.time.LocalDate;
 
-public abstract class Employee extends Person {
+public abstract class Employee extends Person  {
 
     private int salary;
     private int experienceYears;
     private String education;
-    private Department department;
+    public static int totalEmployees = 0;
 
     public Employee() {
+        totalEmployees += 1;
     }
 
     public Employee(String fullName, String gender, LocalDate birthday, int salary,
-                    int experienceYears, String education, Department department) {
+                    int experienceYears, String education) {
         super(fullName, gender, birthday);
         this.salary = salary;
         this.experienceYears = experienceYears;
         this.education = education;
-        this.department = department;
+        totalEmployees += 1;
     }
 
     public void work(){
         System.out.println("Working");
     }
-
-
-    //Getters and setters:
 
     public int getSalary() {
         return salary;
@@ -52,21 +50,12 @@ public abstract class Employee extends Person {
         this.education = education;
     }
 
-    public Department getDepartment() {
-        return department;
-    }
-
-    public void setHospital(Department department) {
-        this.department = department;
-    }
-
     @Override
     public String toString() {
         return "Employee{" +
                 "salary=" + salary +
                 ", experienceYears=" + experienceYears +
                 ", education='" + education + '\'' +
-                ", department=" + department +
                 '}';
     }
 }

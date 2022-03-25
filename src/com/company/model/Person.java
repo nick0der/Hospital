@@ -40,4 +40,13 @@ public abstract class Person {
     public void setBirthday(LocalDate birthday) {
         this.birthday = birthday;
     }
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                "fullName='" + fullName + '\'' +
+                ", gender='" + gender + '\'' +
+                ", birthday=" + birthday +
+                '}';
+    }
 }

@@ -1,6 +1,6 @@
 package com.company.model;
 
-public class Ambulance extends Transport {
+public final class Ambulance extends Transport {
 
     private Hospital hospital;
     private String trackNumber;

@@ -10,7 +10,7 @@ public abstract class Doctor extends Employee {
     }
 
     public Doctor(String fullName, String gender, LocalDate birthday, int salary, int experienceYears, String education, Department department, String certification) {
-        super(fullName, gender, birthday, salary, experienceYears, education, department);
+        super(fullName, gender, birthday, salary, experienceYears, education);
         this.certification = certification;
     }
 
