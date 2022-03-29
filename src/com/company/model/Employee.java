@@ -1,5 +1,7 @@
 package com.company.model;
 
+import com.company.enums.Gender;
+
 import java.time.LocalDate;
 
 public abstract class Employee extends Person  {
@@ -13,7 +15,7 @@ public abstract class Employee extends Person  {
         totalEmployees += 1;
     }
 
-    public Employee(String fullName, String gender, LocalDate birthday, int salary,
+    public Employee(String fullName, Gender gender, LocalDate birthday, int salary,
                     int experienceYears, String education) {
         super(fullName, gender, birthday);
         this.salary = salary;

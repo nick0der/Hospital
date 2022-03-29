@@ -27,7 +27,12 @@ public final class TherapyDepartment extends Department {
     }
 
     public void setNumberOfTherapists(int numberOfTherapists) {
-        this.numberOfTherapists = numberOfTherapists;
+        try {
+            if (numberOfTherapists < 0) throw new IllegalArgumentException(numberOfTherapists + " is negative. Use only positive numbers.");
+            this.numberOfTherapists = numberOfTherapists;
+        } catch (IllegalArgumentException e) {
+            e.printStackTrace();
+        }
     }
 
     @Override

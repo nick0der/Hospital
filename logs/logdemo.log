@@ -1,0 +1,10 @@
+22:43:21.573 [main] DEBUG com.company.Main - Test debug message
+22:43:21.576 [main] INFO  com.company.Main - Test info message
+22:43:21.576 [main] WARN  com.company.Main - Test warn message
+22:43:21.576 [main] ERROR com.company.Main - Test error message
+22:43:21.576 [main] FATAL com.company.Main - Test fatal message
+22:43:43.763 [main] DEBUG com.company.Main - Test debug message
+22:43:43.766 [main] INFO  com.company.Main - Test info message
+22:43:43.766 [main] WARN  com.company.Main - Test warn message
+22:43:43.766 [main] ERROR com.company.Main - Test error message
+22:43:43.766 [main] FATAL com.company.Main - Test fatal message

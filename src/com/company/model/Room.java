@@ -32,16 +32,28 @@ public abstract class Room {
         return width;
     }
 
+    //Width setter with exception (width cannot be negative)
     public void setWidth(int width) {
-        this.width = width;
+        try {
+            if (width < 0) throw new IllegalArgumentException("Width cannot be negative: " + width);
+            this.width = width;
+        } catch (IllegalArgumentException e) {
+            e.printStackTrace();
+        }
     }
 
     public int getHeight() {
         return height;
     }
 
+    //Height setter with exception (height cannot be negative)
     public void setHeight(int height) {
-        this.height = height;
+        try {
+            if (height < 0) throw new IllegalArgumentException("Height cannot be negative: " + height);
+            this.height = height;
+        } catch (IllegalArgumentException e) {
+            e.printStackTrace();
+        }
     }
 
     @Override

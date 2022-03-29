@@ -1,17 +1,19 @@
 package com.company.model;
 
+import com.company.enums.Gender;
+
 import java.time.LocalDate;
 
 public abstract class Person {
 
     private String fullName;
-    private String gender;
+    private Gender gender;
     private LocalDate birthday;
 
     public Person() {
     }
 
-    public Person(String fullName, String gender, LocalDate birthday) {
+    public Person(String fullName, Gender gender, LocalDate birthday) {
         this.fullName = fullName;
         this.gender = gender;
         this.birthday = birthday;
@@ -25,11 +27,11 @@ public abstract class Person {
         this.fullName = fullName;
     }
 
-    public String getGender() {
+    public Gender getGender() {
         return gender;
     }
 
-    public void setGender(String gender) {
+    public void setGender(Gender gender) {
         this.gender = gender;
     }
 
@@ -37,8 +39,15 @@ public abstract class Person {
         return birthday;
     }
 
+    //Birthday setter with exception (cannot be under 1900 year)
     public void setBirthday(LocalDate birthday) {
-        this.birthday = birthday;
+        try {
+            if (birthday.isBefore(LocalDate.of(1900, 1, 1)))
+                throw new IllegalArgumentException("Date " + birthday.toString() + " is very old. Choose new date.");
+                this.birthday = birthday;
+        } catch (IllegalArgumentException e) {
+            e.printStackTrace();
+        }
     }
 
     @Override

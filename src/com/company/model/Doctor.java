@@ -1,5 +1,7 @@
 package com.company.model;
 
+import com.company.enums.Gender;
+
 import java.time.LocalDate;
 
 public abstract class Doctor extends Employee {
@@ -9,7 +11,7 @@ public abstract class Doctor extends Employee {
     public Doctor() {
     }
 
-    public Doctor(String fullName, String gender, LocalDate birthday, int salary, int experienceYears, String education, Department department, String certification) {
+    public Doctor(String fullName, Gender gender, LocalDate birthday, int salary, int experienceYears, String education, Department department, String certification) {
         super(fullName, gender, birthday, salary, experienceYears, education);
         this.certification = certification;
     }

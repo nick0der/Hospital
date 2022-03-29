@@ -1,5 +1,6 @@
 package com.company.model;
 
+import com.company.enums.Gender;
 import com.company.enums.HealthStatus;
 
 import java.time.LocalDate;
@@ -12,7 +13,7 @@ public final class Patient extends Person {
     public Patient() {
     }
 
-    public Patient(String fullName, String gender, LocalDate birthday, HealthStatus healthStatus, StationaryRoom hospitalRoom) {
+    public Patient(String fullName, Gender gender, LocalDate birthday, HealthStatus healthStatus, StationaryRoom hospitalRoom) {
         super(fullName, gender, birthday);
         this.healthStatus = healthStatus;
         this.hospitalRoom = hospitalRoom;

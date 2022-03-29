@@ -1,5 +1,6 @@
 package com.company.model;
 
+import com.company.enums.Gender;
 import com.company.enums.HealthStatus;
 import com.company.interfaces.IOperate;
 
@@ -14,7 +15,7 @@ public final class Surgeon extends Employee implements IOperate {
         this.operating = operating;
     }
 
-    public Surgeon(String fullName, String gender, LocalDate birthday, int salary, int experienceYears,
+    public Surgeon(String fullName, Gender gender, LocalDate birthday, int salary, int experienceYears,
                    String education, boolean operating, OperatingRoom operatingRoom) {
         super(fullName, gender, birthday, salary, experienceYears, education);
         this.operating = operating;

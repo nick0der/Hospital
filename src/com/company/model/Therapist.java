@@ -1,5 +1,6 @@
 package com.company.model;
 
+import com.company.enums.Gender;
 import com.company.enums.HealthStatus;
 import com.company.interfaces.ITherapy;
 
@@ -12,7 +13,7 @@ public final class Therapist extends Employee implements ITherapy {
     public Therapist() {
     }
 
-    public Therapist(String fullName, String gender, LocalDate birthday, int salary, int experienceYears, String education, Department department, TherapyRoom therapyRoom) {
+    public Therapist(String fullName, Gender gender, LocalDate birthday, int salary, int experienceYears, String education, Department department, TherapyRoom therapyRoom) {
         super(fullName, gender, birthday, salary, experienceYears, education);
         this.therapyRoom = therapyRoom;
     }

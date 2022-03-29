@@ -1,5 +1,6 @@
 package com.company.model;
 
+import com.company.enums.Gender;
 import com.company.interfaces.INurse;
 
 import java.time.LocalDate;
@@ -11,7 +12,7 @@ public final class Nurse extends Employee implements INurse {
     public Nurse() {
     }
 
-    public Nurse(String fullName, String gender, LocalDate birthday, int salary,
+    public Nurse(String fullName, Gender gender, LocalDate birthday, int salary,
                  int experienceYears, String education, StationaryRoom hospitalRoom) {
         super(fullName, gender, birthday, salary, experienceYears, education);
         this.hospitalRoom = hospitalRoom;

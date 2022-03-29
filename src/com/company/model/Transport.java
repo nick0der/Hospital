@@ -30,7 +30,13 @@ public abstract class Transport {
     }
 
     public void setYear(int year) {
-        this.year = year;
+
+        try {
+            if (year < 1900) throw new IllegalArgumentException(year + " is not valid value. Year must be 1900 or higher.");
+            this.year = year;
+        } catch (IllegalArgumentException e) {
+            e.printStackTrace();
+        }
     }
 
     public int getPrice() {
