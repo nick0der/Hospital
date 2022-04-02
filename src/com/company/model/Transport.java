@@ -1,6 +1,12 @@
 package com.company.model;
 
+import com.company.exceptions.IncorrectArgumentException;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 public abstract class Transport {
+
+    private static final Logger LOGGER = LogManager.getLogger(Nurse.class);
 
     private String model;
     private int year;
@@ -32,10 +38,11 @@ public abstract class Transport {
     public void setYear(int year) {
 
         try {
-            if (year < 1900) throw new IllegalArgumentException(year + " is not valid value. Year must be 1900 or higher.");
+            if (year < 1900) throw new IncorrectArgumentException(year + " is not valid value. Year must be 1900 or higher.");
             this.year = year;
-        } catch (IllegalArgumentException e) {
+        } catch (IncorrectArgumentException e) {
             e.printStackTrace();
+            LOGGER.error(e.getMessage());
         }
     }
 

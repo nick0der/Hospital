@@ -1,10 +1,16 @@
 package com.company.model;
 
 import com.company.enums.Gender;
+import com.company.exceptions.DateAboveAvailableException;
+import com.company.exceptions.DateBelowAvailableException;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import java.time.LocalDate;
 
 public abstract class Person {
+
+    private static final Logger LOGGER = LogManager.getLogger(Person.class);
 
     private String fullName;
     private Gender gender;
@@ -43,10 +49,13 @@ public abstract class Person {
     public void setBirthday(LocalDate birthday) {
         try {
             if (birthday.isBefore(LocalDate.of(1900, 1, 1)))
-                throw new IllegalArgumentException("Date " + birthday.toString() + " is very old. Choose new date.");
+                throw new DateBelowAvailableException("Date " + birthday.toString() + " is very old. Choose another date.");
+            else if (birthday.isAfter(LocalDate.now()))
+                throw new DateAboveAvailableException("Date " + birthday.toString() + " is very new. Choose another date.");
                 this.birthday = birthday;
-        } catch (IllegalArgumentException e) {
+        } catch (DateBelowAvailableException | DateAboveAvailableException e) {
             e.printStackTrace();
+            LOGGER.error(e.getMessage());
         }
     }
 

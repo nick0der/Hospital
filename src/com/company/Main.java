@@ -16,11 +16,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        LOGGER.debug("Test debug message");
-        LOGGER.info("Test info message");
-        LOGGER.warn("Test warn message");
-        LOGGER.error("Test error message");
-        LOGGER.fatal("Test fatal message");
+        LOGGER.info("Application started");
 
         Hospital hospital = new Hospital("Central Children Hospital", "vul. Halytska 11, Chernivtsi", "+380968903411");
         OperatingDepartment operatingDepartment1 = new OperatingDepartment(hospital, 12, 3, 10);
@@ -35,8 +31,10 @@ public class Main {
 
         ambulance1.setYear(-1);
 
-        System.out.println(ambulance1.getYear());
+        LOGGER.info(ambulance1.getYear());
         //Print static field
-        System.out.println("Total employees: " + Employee.totalEmployees);
+        LOGGER.info("Total employees: " + Employee.totalEmployees);
+
+        LOGGER.info("Application finished");
     }
 }

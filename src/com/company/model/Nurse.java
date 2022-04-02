@@ -2,10 +2,14 @@ package com.company.model;
 
 import com.company.enums.Gender;
 import com.company.interfaces.INurse;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import java.time.LocalDate;
 
 public final class Nurse extends Employee implements INurse {
+
+    private static final Logger LOGGER = LogManager.getLogger(Nurse.class);
 
     private StationaryRoom hospitalRoom;
 
@@ -19,7 +23,8 @@ public final class Nurse extends Employee implements INurse {
     }
 
     public void attendRoom(StationaryRoom stationaryRoom) {
-        System.out.println("Nurse " + this.getFullName() + " attended room №" + stationaryRoom.getNumber());
+        String message = "Nurse " + this.getFullName() + " attended room №" + stationaryRoom.getNumber();
+        LOGGER.info(message);
     }
 
     public StationaryRoom getHospitalRoom() {

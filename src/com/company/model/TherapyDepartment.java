@@ -1,6 +1,12 @@
 package com.company.model;
 
+import com.company.exceptions.IncorrectArgumentException;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 public final class TherapyDepartment extends Department {
+
+    private static final Logger LOGGER = LogManager.getLogger(TherapyDepartment.class);
 
     private String therapyName;
     private int numberOfTherapists;
@@ -28,10 +34,11 @@ public final class TherapyDepartment extends Department {
 
     public void setNumberOfTherapists(int numberOfTherapists) {
         try {
-            if (numberOfTherapists < 0) throw new IllegalArgumentException(numberOfTherapists + " is negative. Use only positive numbers.");
+            if (numberOfTherapists < 0) throw new IncorrectArgumentException(numberOfTherapists + " is negative. Use only positive numbers.");
             this.numberOfTherapists = numberOfTherapists;
-        } catch (IllegalArgumentException e) {
+        } catch (IncorrectArgumentException e) {
             e.printStackTrace();
+            LOGGER.error(e.getMessage());
         }
     }
 

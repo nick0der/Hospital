@@ -3,10 +3,14 @@ package com.company.model;
 import com.company.enums.Gender;
 import com.company.enums.HealthStatus;
 import com.company.interfaces.IOperate;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import java.time.LocalDate;
 
 public final class Surgeon extends Employee implements IOperate {
+
+    private static final Logger LOGGER = LogManager.getLogger(Nurse.class);
 
     private boolean operating;
     private OperatingRoom operatingRoom;
@@ -25,11 +29,15 @@ public final class Surgeon extends Employee implements IOperate {
     public void startOperate(Patient patient) {
         operating = true;
         patient.setHealthStatus(HealthStatus.BEINGOPERATED);
+        LOGGER.info("Surgeon " + getFullName() + " is now operating");
+        LOGGER.info("Patient " + patient.getFullName() + " is being operated");
     }
 
     public void endOperate(Patient patient){
         operating = false;
         patient.setHealthStatus(HealthStatus.HEALTY);
+        LOGGER.info("Surgeon " + getFullName() + " ended operation");
+        LOGGER.info("Patient " + patient.getFullName() + " is now healthy");
     }
 
     public boolean isOperating() {
