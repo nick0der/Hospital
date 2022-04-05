@@ -2,8 +2,8 @@ package com.company.model;
 
 import com.company.enums.Gender;
 import com.company.interfaces.INurse;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+import org.apache.log4j.LogManager;
+import org.apache.log4j.Logger;
 
 import java.time.LocalDate;
 

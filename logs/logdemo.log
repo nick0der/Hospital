@@ -13,3 +13,17 @@
 10:45:21.648 [main] INFO  com.company.Main - 2005
 10:45:21.649 [main] INFO  com.company.Main - Total employees: 2
 10:45:21.649 [main] INFO  com.company.Main - Application finished
+15:30:40.914 [main] INFO  com.company.Main - Application started
+15:30:40.929 [main] ERROR com.company.model.Nurse - -1 is not valid value. Year must be 1900 or higher.
+15:30:40.930 [main] INFO  com.company.Main - 2005
+15:30:40.931 [main] INFO  com.company.Main - Total employees: 2
+15:30:40.932 [main] INFO  com.company.Main - Application finished16:21:01.235 [main] INFO  com.company.Main  Application started
+16:21:01.290 [main] ERROR com.company.model.Nurse  -1 is not valid value. Year must be 1900 or higher.
+16:21:01.290 [main] INFO  com.company.Main  2005
+16:21:01.291 [main] INFO  com.company.Main  Total employees: 2
+16:21:01.291 [main] INFO  com.company.Main  Application finished
+16:21:19.186 [main] INFO  com.company.Main - Application started
+16:21:19.220 [main] ERROR com.company.model.Nurse - -1 is not valid value. Year must be 1900 or higher.
+16:21:19.221 [main] INFO  com.company.Main - 2005
+16:21:19.222 [main] INFO  com.company.Main - Total employees: 2
+16:21:19.226 [main] INFO  com.company.Main - Application finished
