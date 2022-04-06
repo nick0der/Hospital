@@ -5,3 +5,4 @@ public class DateAboveAvailableException extends Exception{
         super(message);
     }
 }
+

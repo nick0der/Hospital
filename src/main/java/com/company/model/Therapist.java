@@ -1,12 +1,13 @@
 package com.company.model;
 
-import com.company.enums.Gender;
-import com.company.enums.HealthStatus;
-import com.company.interfaces.ITherapy;
+import java.time.LocalDate;
+
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
 
-import java.time.LocalDate;
+import com.company.enums.Gender;
+import com.company.enums.HealthStatus;
+import com.company.interfaces.ITherapy;
 
 public final class Therapist extends Employee implements ITherapy {
 

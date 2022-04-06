@@ -1,11 +1,12 @@
 package com.company.model;
 
-import com.company.enums.Gender;
-import com.company.interfaces.INurse;
+import java.time.LocalDate;
+
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
 
-import java.time.LocalDate;
+import com.company.enums.Gender;
+import com.company.interfaces.INurse;
 
 public final class Nurse extends Employee implements INurse {
 

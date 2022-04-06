@@ -1,9 +1,9 @@
 package com.company.model;
 
+import java.time.LocalDate;
+
 import com.company.enums.Gender;
 import com.company.enums.HealthStatus;
-
-import java.time.LocalDate;
 
 public final class Patient extends Person {
 

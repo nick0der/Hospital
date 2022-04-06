@@ -1,14 +1,20 @@
 package com.company;
 
-import com.company.enums.DrivingCategory;
-import com.company.enums.Gender;
-import com.company.model.*;
+import java.time.LocalDate;
+import java.util.Arrays;
 
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
 
-import java.time.LocalDate;
-import java.util.Arrays;
+import com.company.enums.DrivingCategory;
+import com.company.enums.Gender;
+import com.company.model.Hospital;
+import com.company.model.OperatingDepartment;
+import com.company.model.OperatingRoom;
+import com.company.model.Ambulance;
+import com.company.model.Surgeon;
+import com.company.model.Driver;
+import com.company.model.Employee;
 
 public class Main {
 

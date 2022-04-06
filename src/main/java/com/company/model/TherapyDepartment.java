@@ -1,8 +1,9 @@
 package com.company.model;
 
-import com.company.exceptions.IncorrectArgumentException;
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
+
+import com.company.exceptions.IncorrectArgumentException;
 
 public final class TherapyDepartment extends Department {
 

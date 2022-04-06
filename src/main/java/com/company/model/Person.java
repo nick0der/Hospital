@@ -1,12 +1,13 @@
 package com.company.model;
 
-import com.company.enums.Gender;
-import com.company.exceptions.DateAboveAvailableException;
-import com.company.exceptions.DateBelowAvailableException;
+import java.time.LocalDate;
+
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
 
-import java.time.LocalDate;
+import com.company.enums.Gender;
+import com.company.exceptions.DateAboveAvailableException;
+import com.company.exceptions.DateBelowAvailableException;
 
 public abstract class Person {
 

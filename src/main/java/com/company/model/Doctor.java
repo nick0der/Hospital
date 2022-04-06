@@ -1,8 +1,8 @@
 package com.company.model;
 
-import com.company.enums.Gender;
-
 import java.time.LocalDate;
+
+import com.company.enums.Gender;
 
 public abstract class Doctor extends Employee {
 

@@ -1,10 +1,10 @@
 package com.company.model;
 
-import com.company.enums.DrivingCategory;
-import com.company.enums.Gender;
-
 import java.time.LocalDate;
 import java.util.List;
+
+import com.company.enums.DrivingCategory;
+import com.company.enums.Gender;
 
 public final class Driver extends Employee {
 
