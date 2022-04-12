@@ -1,6 +1,7 @@
 package com.company.enums;
 
 public enum DrivingCategory {
+
     A("Motorbikes"),
     B("Cars No Max 8 passenger seats"),
     BE("B + trailer No Up to 3,500kg"),

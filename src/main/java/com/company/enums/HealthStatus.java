@@ -1,6 +1,7 @@
 package com.company.enums;
 
 public enum HealthStatus {
+
     SICK("Sick"),
     HEALTY("Healthy"),
     BEINGOPERATED("Being operated");

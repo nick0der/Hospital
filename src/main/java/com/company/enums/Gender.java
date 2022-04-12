@@ -1,6 +1,7 @@
 package com.company.enums;
 
 public enum Gender {
+
     MALE("Male"),
     FEMALE("Female"),
     OTHER("Other");
