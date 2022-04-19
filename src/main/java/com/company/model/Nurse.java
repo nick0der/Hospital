@@ -12,7 +12,7 @@ public final class Nurse extends Employee implements INurse {
 
     private static final Logger LOGGER = LogManager.getLogger(Nurse.class);
 
-    private StationaryRoom hospitalRoom;
+    private StationaryRoom stationaryRoom;
 
     public Nurse() {
     }
@@ -20,7 +20,7 @@ public final class Nurse extends Employee implements INurse {
     public Nurse(String fullName, Gender gender, LocalDate birthday, int salary,
                  int experienceYears, String education, StationaryRoom hospitalRoom) {
         super(fullName, gender, birthday, salary, experienceYears, education);
-        this.hospitalRoom = hospitalRoom;
+        this.stationaryRoom = stationaryRoom;
     }
 
     public void attendRoom(StationaryRoom stationaryRoom) {
@@ -29,17 +29,17 @@ public final class Nurse extends Employee implements INurse {
     }
 
     public StationaryRoom getHospitalRoom() {
-        return hospitalRoom;
+        return stationaryRoom;
     }
 
     public void setHospitalRoom(StationaryRoom stationaryRoom) {
-        this.hospitalRoom = stationaryRoom;
+        this.stationaryRoom = stationaryRoom;
     }
 
     @Override
     public String toString() {
         return "Nurse{" +
-                "hospitalRoom=" + hospitalRoom +
+                "hospitalRoom=" + stationaryRoom +
                 '}';
     }
 }

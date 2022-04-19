@@ -17,6 +17,7 @@ com/company/model/Doctor.class
 com/company/model/Person.class
 com/company/exceptions/DateAboveAvailableException.class
 com/company/Main.class
+com/company/interfaces/Area.class
 com/company/model/Therapist.class
 com/company/model/Hospital.class
 com/company/model/TherapyDepartment.class

@@ -2,6 +2,8 @@ package com.company.model;
 
 import java.time.LocalDate;
 
+import com.company.exceptions.IncorrectArgumentException;
+import org.apache.commons.lang3.StringUtils;
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
 
@@ -31,7 +33,17 @@ public abstract class Person {
     }
 
     public void setFullName(String fullName) {
-        this.fullName = fullName;
+        try {
+            if (!StringUtils.isAlpha(fullName))
+                throw new IncorrectArgumentException("Full name must contain only letters.");
+            else if (StringUtils.isBlank(fullName)) {
+                throw new IncorrectArgumentException("Full name cannot be blank.");
+            }
+            this.fullName = fullName;
+        } catch (IncorrectArgumentException e) {
+            e.printStackTrace();
+            LOGGER.error(e.getMessage());
+        }
     }
 
     public Gender getGender() {

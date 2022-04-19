@@ -1,5 +1,8 @@
 package com.company.model;
 
+import org.apache.commons.lang3.RandomStringUtils;
+import org.apache.commons.lang3.StringUtils;
+
 public final class Ambulance extends Transport {
 
     private Hospital hospital;
@@ -18,6 +21,11 @@ public final class Ambulance extends Transport {
         System.out.println("Ambulance " + trackNumber + " is moving to " + address);
     }
 
+    //Generates track number, for example AM1499580234
+    static public String generateTrackNumber(){
+        return StringUtils.upperCase(RandomStringUtils.randomAlphabetic(2)) +
+                RandomStringUtils.randomNumeric(10);
+    }
     public Hospital getHospital() {
         return hospital;
     }

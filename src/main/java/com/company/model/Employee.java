@@ -9,10 +9,8 @@ public abstract class Employee extends Person  {
     private int salary;
     private int experienceYears;
     private String education;
-    public static int totalEmployees = 0;
 
     public Employee() {
-        totalEmployees += 1;
     }
 
     public Employee(String fullName, Gender gender, LocalDate birthday, int salary,
@@ -21,7 +19,6 @@ public abstract class Employee extends Person  {
         this.salary = salary;
         this.experienceYears = experienceYears;
         this.education = education;
-        totalEmployees += 1;
     }
 
     public void work(){

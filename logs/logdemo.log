@@ -32,3 +32,111 @@
 22:57:00.057 [main] INFO  com.company.Main - 2005
 22:57:00.059 [main] INFO  com.company.Main - Total employees: 2
 22:57:00.060 [main] INFO  com.company.Main - Application finished
+12:50:21.719 [main] INFO  com.company.Main - Application started
+12:59:57.737 [main] INFO  com.company.Main - Application started
+13:13:58.520 [main] INFO  com.company.Main - Application started
+13:15:51.737 [main] INFO  com.company.Main - Application started
+13:18:16.795 [main] INFO  com.company.Main - Application started
+13:18:39.956 [main] INFO  com.company.Main - Application started
+13:19:07.495 [main] INFO  com.company.Main - Application started
+13:22:12.910 [main] INFO  com.company.Main - Application started
+13:24:58.833 [main] INFO  com.company.Main - Application started
+13:27:51.187 [main] INFO  com.company.Main - Application started
+13:29:14.521 [main] INFO  com.company.Main - Application started
+13:30:54.539 [main] INFO  com.company.Main - Application started
+13:32:12.539 [main] INFO  com.company.Main - Application started
+13:37:11.003 [main] INFO  com.company.Main - Application started
+13:41:53.998 [main] INFO  com.company.Main - Application started
+13:41:58.475 [main] INFO  com.company.Main - Application started
+13:42:07.886 [main] INFO  com.company.Main - Application started
+13:43:13.645 [main] INFO  com.company.Main - Application started
+13:43:20.446 [main] INFO  com.company.Main - Application started
+13:43:24.351 [main] INFO  com.company.Main - Application started
+13:43:27.969 [main] INFO  com.company.Main - Application started
+13:43:31.723 [main] INFO  com.company.Main - Application started
+13:43:42.021 [main] INFO  com.company.Main - Application started
+13:43:45.603 [main] INFO  com.company.Main - Application started
+13:43:48.845 [main] INFO  com.company.Main - Application started
+13:45:47.810 [main] INFO  com.company.Main - Application started
+13:48:51.437 [main] INFO  com.company.Main - Application started
+13:49:21.659 [main] INFO  com.company.Main - Application started
+13:49:33.521 [main] INFO  com.company.Main - Application started
+13:49:38.230 [main] INFO  com.company.Main - Application started
+13:49:44.647 [main] INFO  com.company.Main - Application started
+13:52:44.842 [main] INFO  com.company.Main - Application started
+13:52:48.877 [main] INFO  com.company.Main - Application started
+13:52:54.149 [main] INFO  com.company.Main - Application started
+13:52:58.672 [main] INFO  com.company.Main - Application started
+13:53:10.681 [main] INFO  com.company.Main - Application started
+13:53:14.327 [main] INFO  com.company.Main - Application started
+13:53:20.112 [main] INFO  com.company.Main - Application started
+13:53:23.707 [main] INFO  com.company.Main - Application started
+14:31:57.960 [main] INFO  com.company.Main - Application started
+14:31:57.993 [main] INFO  com.company.Main - Application finished
+14:32:22.844 [main] INFO  com.company.Main - Application started
+14:45:25.981 [main] INFO  com.company.Main - Application started
+14:45:26.025 [main] INFO  com.company.Main - Application finished
+14:47:59.123 [main] INFO  com.company.Main - Application started
+14:47:59.159 [main] INFO  com.company.Main - Application finished
+14:48:22.781 [main] INFO  com.company.Main - Application started
+14:48:22.817 [main] INFO  com.company.Main - Application finished
+14:48:22.817 [main] INFO  com.company.Main - Application finished
+14:49:01.484 [main] INFO  com.company.Main - Application started
+14:49:01.573 [main] INFO  com.company.Main - Jesse Pinkman
+14:49:01.574 [main] INFO  com.company.Main - Jake Brake
+14:49:01.574 [main] INFO  com.company.Main - Boris Brown
+14:49:18.219 [main] INFO  com.company.Main - Jesse Pinkman
+14:49:18.221 [main] INFO  com.company.Main - Jake Brake
+14:49:18.221 [main] INFO  com.company.Main - Boris Brown
+14:50:35.504 [main] INFO  com.company.Main - All Patients:
+14:50:35.507 [main] INFO  com.company.Main - fullName: Jesse Pinkman
+14:50:35.508 [main] INFO  com.company.Main - All Patients:
+14:50:35.508 [main] INFO  com.company.Main - fullName: Jake Brake
+14:50:35.509 [main] INFO  com.company.Main - All Patients:
+14:50:35.510 [main] INFO  com.company.Main - fullName: Boris Brown
+14:50:45.737 [main] INFO  com.company.Main - fullName: Jesse Pinkman
+14:50:45.739 [main] INFO  com.company.Main - fullName: Jake Brake
+14:50:45.739 [main] INFO  com.company.Main - fullName: Boris Brown
+14:58:03.237 [main] INFO  com.company.Main - fullName: Jesse Pinkman
+14:58:03.240 [main] INFO  com.company.Main - fullName: Jake Brake
+14:58:03.240 [main] INFO  com.company.Main - fullName: Boris Brown
+14:58:13.371 [main] INFO  com.company.Main - B(Cars No Max 8 passenger seats),C(Large lorries Yes Max trailer 750kg)
+14:58:13.375 [main] INFO  com.company.Main - fullName: Jesse Pinkman
+14:58:13.379 [main] INFO  com.company.Main - fullName: Jake Brake
+14:58:13.379 [main] INFO  com.company.Main - fullName: Boris Brown
+16:01:25.616 [main] INFO  com.company.Main - Hospital{name='Central Children Hospital', address='vul. Halytska 11, Chernivtsi', phoneNumber='+380968903411'}
+16:01:25.633 [main] INFO  com.company.Main - B(Cars No Max 8 passenger seats),C(Large lorries Yes Max trailer 750kg)
+16:01:25.635 [main] INFO  com.company.Main - fullName: Jesse Pinkman
+16:01:25.636 [main] INFO  com.company.Main - fullName: Jake Brake
+16:01:25.637 [main] INFO  com.company.Main - fullName: Boris Brown
+16:02:41.089 [main] INFO  com.company.Main - B(Cars No Max 8 passenger seats),C(Large lorries Yes Max trailer 750kg)
+16:02:41.118 [main] INFO  com.company.Main - Patient{healthStatus=SICK, hospitalRoom=StationaryRoom{stationaryDepartment=StationaryDepartment{dropCounters=5}, totalBeds=6, freeBeds=5}}
+16:02:41.118 [main] INFO  com.company.Main - Patient{healthStatus=HEALTY, hospitalRoom=null}
+16:02:41.119 [main] INFO  com.company.Main - Patient{healthStatus=BEINGOPERATED, hospitalRoom=StationaryRoom{stationaryDepartment=StationaryDepartment{dropCounters=5}, totalBeds=6, freeBeds=2}}
+16:04:37.291 [main] INFO  com.company.Main - B(Cars No Max 8 passenger seats),C(Large lorries Yes Max trailer 750kg)
+16:04:37.311 [main] INFO  com.company.Main - Hospital{name='Central Children Hospital', address='vul. Halytska 11, Chernivtsi', phoneNumber='+380968903411'}
+16:04:37.320 [main] INFO  com.company.Main - OperatingDepartment{freeOperatingRooms=5}
+16:04:37.320 [main] INFO  com.company.Main - OperatingDepartment{freeOperatingRooms=7}
+16:04:37.322 [main] INFO  com.company.Main - StationaryDepartment{dropCounters=5}
+16:04:37.323 [main] INFO  com.company.Main - StationaryDepartment{dropCounters=7}
+16:04:37.331 [main] INFO  com.company.Main - TherapyDepartment{therapyName='Physical therapy', numberOfTherapists=5}
+16:04:37.332 [main] INFO  com.company.Main - TherapyDepartment{therapyName='Aromatherapy', numberOfTherapists=3}
+16:04:37.349 [main] INFO  com.company.Main - OperatingRoom{beds=5, scalpels=12, scissors=4, pincers=8, operatingDepartment=OperatingDepartment{freeOperatingRooms=5}}
+16:04:37.352 [main] INFO  com.company.Main - OperatingRoom{beds=8, scalpels=10, scissors=2, pincers=3, operatingDepartment=OperatingDepartment{freeOperatingRooms=5}}
+16:04:37.352 [main] INFO  com.company.Main - OperatingRoom{beds=3, scalpels=5, scissors=7, pincers=5, operatingDepartment=OperatingDepartment{freeOperatingRooms=5}}
+16:04:37.367 [main] INFO  com.company.Main - StationaryRoom{stationaryDepartment=StationaryDepartment{dropCounters=5}, totalBeds=6, freeBeds=5}
+16:04:37.368 [main] INFO  com.company.Main - StationaryRoom{stationaryDepartment=StationaryDepartment{dropCounters=5}, totalBeds=6, freeBeds=2}
+16:04:37.369 [main] INFO  com.company.Main - StationaryRoom{stationaryDepartment=StationaryDepartment{dropCounters=5}, totalBeds=5, freeBeds=3}
+16:04:37.378 [main] INFO  com.company.Main - TherapyRoom{therapyDepartment=TherapyDepartment{therapyName='Physical therapy', numberOfTherapists=5}}
+16:04:37.378 [main] INFO  com.company.Main - TherapyRoom{therapyDepartment=TherapyDepartment{therapyName='Physical therapy', numberOfTherapists=5}}
+16:04:37.379 [main] INFO  com.company.Main - TherapyRoom{therapyDepartment=TherapyDepartment{therapyName='Aromatherapy', numberOfTherapists=3}}
+16:04:37.382 [main] INFO  com.company.Main - Ambulance{hospital=Hospital{name='Central Children Hospital', address='vul. Halytska 11, Chernivtsi', phoneNumber='+380968903411'}, trackNumber='SJ1064364317'}
+16:04:37.382 [main] INFO  com.company.Main - Ambulance{hospital=Hospital{name='Central Children Hospital', address='vul. Halytska 11, Chernivtsi', phoneNumber='+380968903411'}, trackNumber='AY8672246205'}
+16:04:37.383 [main] INFO  com.company.Main - Driver{ambulance=Ambulance{hospital=Hospital{name='Central Children Hospital', address='vul. Halytska 11, Chernivtsi', phoneNumber='+380968903411'}, trackNumber='SJ1064364317'}, categories=[B, C]}
+16:04:37.383 [main] INFO  com.company.Main - Driver{ambulance=Ambulance{hospital=Hospital{name='Central Children Hospital', address='vul. Halytska 11, Chernivtsi', phoneNumber='+380968903411'}, trackNumber='SJ1064364317'}, categories=[B, BE]}
+16:04:37.385 [main] INFO  com.company.Main - Surgeon{operating=false}
+16:04:37.389 [main] INFO  com.company.Main - Nurse{hospitalRoom=null}
+16:04:37.391 [main] INFO  com.company.Main - Therapist{therapyRoom=TherapyRoom{therapyDepartment=TherapyDepartment{therapyName='Physical therapy', numberOfTherapists=5}}}
+16:04:37.393 [main] INFO  com.company.Main - Patient{healthStatus=SICK, hospitalRoom=StationaryRoom{stationaryDepartment=StationaryDepartment{dropCounters=5}, totalBeds=6, freeBeds=5}}
+16:04:37.393 [main] INFO  com.company.Main - Patient{healthStatus=HEALTY, hospitalRoom=null}
+16:04:37.394 [main] INFO  com.company.Main - Patient{healthStatus=BEINGOPERATED, hospitalRoom=StationaryRoom{stationaryDepartment=StationaryDepartment{dropCounters=5}, totalBeds=6, freeBeds=2}}

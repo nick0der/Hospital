@@ -15,6 +15,7 @@
 /Users/nickpopyk/IdeaProjects/Hospital/src/main/java/com/company/model/TherapyDepartment.java
 /Users/nickpopyk/IdeaProjects/Hospital/src/main/java/com/company/model/Surgeon.java
 /Users/nickpopyk/IdeaProjects/Hospital/src/main/java/com/company/interfaces/ITherapy.java
+/Users/nickpopyk/IdeaProjects/Hospital/src/main/java/com/company/interfaces/Area.java
 /Users/nickpopyk/IdeaProjects/Hospital/src/main/java/com/company/model/Nurse.java
 /Users/nickpopyk/IdeaProjects/Hospital/src/main/java/com/company/model/Therapist.java
 /Users/nickpopyk/IdeaProjects/Hospital/src/main/java/com/company/model/StationaryDepartment.java

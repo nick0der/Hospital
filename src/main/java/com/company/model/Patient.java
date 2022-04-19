@@ -8,15 +8,15 @@ import com.company.enums.HealthStatus;
 public final class Patient extends Person {
 
     private HealthStatus healthStatus;
-    private StationaryRoom hospitalRoom;
+    private StationaryRoom stationaryRoom;
 
     public Patient() {
     }
 
-    public Patient(String fullName, Gender gender, LocalDate birthday, HealthStatus healthStatus, StationaryRoom hospitalRoom) {
+    public Patient(String fullName, Gender gender, LocalDate birthday, HealthStatus healthStatus, StationaryRoom stationaryRoom) {
         super(fullName, gender, birthday);
         this.healthStatus = healthStatus;
-        this.hospitalRoom = hospitalRoom;
+        this.stationaryRoom = stationaryRoom;
     }
 
     public HealthStatus getHealthStatus() {
@@ -28,18 +28,18 @@ public final class Patient extends Person {
     }
 
     public StationaryRoom getHospitalRoom() {
-        return hospitalRoom;
+        return stationaryRoom;
     }
 
     public void setHospitalRoom(StationaryRoom hospitalRoom) {
-        this.hospitalRoom = hospitalRoom;
+        this.stationaryRoom = hospitalRoom;
     }
 
     @Override
     public String toString() {
         return "Patient{" +
                 "healthStatus=" + healthStatus +
-                ", hospitalRoom=" + hospitalRoom +
+                ", hospitalRoom=" + stationaryRoom +
                 '}';
     }
 }

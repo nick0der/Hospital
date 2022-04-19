@@ -1,5 +1,6 @@
 package com.company.model;
 
+import com.company.interfaces.Area;
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
 
@@ -11,20 +12,21 @@ public abstract class Room {
 
     private int number;
     private int width;
-    private int height;
+    private int length;
 
     public Room() {
     }
 
-    public Room(int number, int width, int height) {
+    public Room(int number, int width, int length) {
         this.number = number;
         this.width = width;
-        this.height = height;
+        this.length = length;
     }
 
     //Auto-calculated variable
     public int getArea(){
-        return width * height;
+        Area area = (int x, int y) -> x * y;
+        return area.calculate(width, length);
     }
 
     public int getNumber() {
@@ -50,15 +52,15 @@ public abstract class Room {
         }
     }
 
-    public int getHeight() {
-        return height;
+    public int getLength() {
+        return length;
     }
 
-    //Height setter with exception (height cannot be negative)
-    public void setHeight(int height) {
+    //Length setter with exception (length cannot be negative)
+    public void setLength(int length) {
         try {
-            if (height < 0) throw new IncorrectArgumentException("Height cannot be negative: " + height);
-            this.height = height;
+            if (length < 0) throw new IncorrectArgumentException("Length cannot be negative: " + length);
+            this.length = length;
         } catch (IncorrectArgumentException e) {
             e.printStackTrace();
             LOGGER.error(e.getMessage());
@@ -70,7 +72,7 @@ public abstract class Room {
         return "Room{" +
                 "number=" + number +
                 ", width=" + width +
-                ", height=" + height +
+                ", length=" + length +
                 '}';
     }
 }

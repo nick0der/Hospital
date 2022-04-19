@@ -18,7 +18,7 @@ public final class Therapist extends Employee implements ITherapy {
     public Therapist() {
     }
 
-    public Therapist(String fullName, Gender gender, LocalDate birthday, int salary, int experienceYears, String education, Department department, TherapyRoom therapyRoom) {
+    public Therapist(String fullName, Gender gender, LocalDate birthday, int salary, int experienceYears, String education, TherapyRoom therapyRoom) {
         super(fullName, gender, birthday, salary, experienceYears, education);
         this.therapyRoom = therapyRoom;
     }
